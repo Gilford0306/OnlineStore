@@ -82,7 +82,6 @@ body.dark-theme {
     font-size: 20px;
 }
 
-/* Добавление солнышка и луны с использованием псевдоэлементов */
 #theme-toggle::before,
 #theme-toggle::after {
     content: '';

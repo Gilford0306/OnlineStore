@@ -24,7 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($check_user_result->num_rows > 0) {
         echo "A user with the same name already exists. Choose a different name.";
     } else {
-        // Регистрация нового пользователя
         $register_query = "INSERT INTO users (username, hashed_password, role) VALUES ('$username_reg', '$password_reg', 'user')";
         if ($conn->query($register_query) === TRUE) {
             echo "Registration successful. You can now log in.";

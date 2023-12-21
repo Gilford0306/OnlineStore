@@ -35,7 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["add_to_cart"])) {
             }
         }
 
-        // Если товара еще нет в корзине, добавляем его
         if (!$product_in_cart) {
             $cart_item = array(
                 'id' => $product_id,
